@@ -1797,3 +1797,34 @@ padding-top:140px;
     padding-top: 130px !important;
   }
 }
+
+.logo{
+    display:flex;
+    align-items:center;
+    flex-shrink:0;
+}
+
+.logo img{
+    width: 300px;
+    transform: translateY(8px);
+}
+
+@media (max-width:768px){
+    .logo img{
+        width:140px;
+    }
+}
+
+@media (max-width:1024px){
+    .logo img{
+        width:170px;
+    }
+}
+
+.footer-logo{
+    margin-bottom:20px;
+}
+
+.footer-logo img{
+    width:220px;
+}
