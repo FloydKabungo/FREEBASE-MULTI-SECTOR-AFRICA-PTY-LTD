@@ -1679,3 +1679,45 @@ padding-top:140px;
 }
 
 }
+
+/* FINAL MOBILE HEADER FIX */
+@media (max-width: 768px) {
+  .top-bar {
+    display: none !important;
+  }
+
+  .hero-nav {
+    position: relative !important;
+    top: auto !important;
+    height: auto !important;
+    padding: 18px 6% !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+
+  .logo {
+    font-size: 34px !important;
+  }
+
+  nav {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 22px !important;
+    flex-wrap: wrap !important;
+  }
+
+  nav a {
+    font-size: 20px !important;
+  }
+
+  .quote-btn {
+    display: none !important;
+  }
+
+  .hero,
+  .about-page,
+  .services-page,
+  .contact-page {
+    padding-top: 40px !important;
+  }
+}
