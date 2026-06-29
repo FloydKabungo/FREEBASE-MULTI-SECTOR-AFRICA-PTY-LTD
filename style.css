@@ -111,10 +111,10 @@ header {
   right: 0;
   height: 78px;
   background: var(--white);
-  padding: 0 8%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
   z-index: 20;
 }
 
@@ -122,15 +122,16 @@ header {
   height: 78px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-shrink: 0;
 }
 
 .logo img {
-  width: 270px;
+  width: 220px;
   height: auto;
   display: block;
-  transform: translateY(7px);
+  object-fit: contain;
+  transform: none;
 }
 
 nav {
@@ -1275,17 +1276,17 @@ footer p {
   }
 
   .logo img {
-    width: 110px;
+    width: 125px;
     transform: none;
   }
 
   nav {
-    gap: 14px;
+    gap: 12px;
     flex-wrap: nowrap;
   }
 
   nav a {
-    font-size: 13px;
+    font-size: 11px;
   }
 
   .quote-btn {
@@ -1433,11 +1434,11 @@ footer p {
   }
 
   .logo img {
-    width: 95px;
+    width: 110px;
   }
 
   nav {
-    gap: 10px;
+    gap: 8px;
   }
 
   nav a {
