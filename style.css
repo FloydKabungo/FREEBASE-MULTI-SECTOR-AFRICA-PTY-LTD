@@ -1294,67 +1294,94 @@ footer p {
   }
 
   .hero {
-    grid-template-columns: 1fr;
+    display: block;
     text-align: left;
-    padding: 145px 6% 80px;
+    padding: 145px 6% 70px;
+    overflow: hidden;
   }
 
   .hero h1 {
-    font-size: clamp(44px, 12vw, 62px);
+    font-size: clamp(42px, 11vw, 58px);
   }
 
   .hero p {
-    font-size: 20px;
-    line-height: 1.7;
+    font-size: 18px;
+    line-height: 1.65;
     margin-left: 0;
   }
 
   .hero-buttons {
     justify-content: flex-start;
+    gap: 18px;
   }
 
   .hero-visual {
-    height: 420px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
   }
 
-  .shape-one {
-    left: 0;
+  .hero-visual .img-shape {
+    position: relative;
+    inset: auto;
+    left: auto;
     right: auto;
-    top: 40px;
-    width: 45%;
-    height: 260px;
+    top: auto;
+    bottom: auto;
+    width: 100%;
+    height: 230px;
+    border-radius: 24px;
   }
 
-  .shape-two {
-    right: 0;
-    top: 20px;
-    width: 55%;
-    height: 210px;
-  }
-
-  .shape-three {
-    right: 10%;
-    bottom: 20px;
-    width: 70%;
-    height: 190px;
+  .hero-visual .shape-three {
+    grid-column: 1 / -1;
   }
 
   .quality-badge {
-    left: 10px;
-    bottom: 20px;
-    width: 110px;
-    height: 110px;
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    top: auto;
+    width: 100%;
+    height: auto;
+    grid-column: 1 / -1;
+    border-radius: 24px;
+    padding: 18px;
+    margin-top: 0;
+  }
+
+  .quality-badge p {
+    max-width: none;
+    font-size: 14px;
   }
 
   .about-page,
   .about-modern,
   .services-page,
   .contact-page {
-    padding-top: 145px;
+    padding: 145px 6% 80px;
+  }
+
+  .about-layout,
+  .about-container,
+  .services-hero,
+  .services-cta,
+  .contact-content {
+    grid-template-columns: 1fr;
   }
 
   .about-left h1 {
     font-size: 38px;
+  }
+
+  .about-intro {
+    font-size: 16px;
+    line-height: 1.7;
   }
 
   .bottom-images,
@@ -1418,6 +1445,21 @@ footer p {
   .contact-hero {
     text-align: center;
   }
+
+  .stats {
+    width: 100%;
+    margin-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    padding: 40px 6%;
+    text-align: center;
+  }
+
+  .stats div {
+    border: none;
+    padding: 10px;
+  }
 }
 
 @media (max-width: 430px) {
@@ -1434,7 +1476,7 @@ footer p {
   }
 
   .logo img {
-    width: 110px;
+    width: 105px;
   }
 
   nav {
@@ -1442,91 +1484,20 @@ footer p {
   }
 
   nav a {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .btn {
     padding: 13px 22px;
   }
-}
-
-/* ===== FIX MOBILE LAYOUT ===== */
-@media (max-width: 768px) {
-
-  .hero {
-    padding: 150px 6% 70px;
-    display: block;
-    overflow: hidden;
-  }
-
-  .hero-text {
-    text-align: left;
-  }
-
-  .hero-buttons {
-    gap: 18px;
-  }
 
   .hero-visual {
-    height: auto;
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 14px;
+    grid-template-columns: 1fr;
   }
 
-  .img-shape {
-    position: relative !important;
-    inset: auto !important;
-    width: 100% !important;
-    height: 230px !important;
-    border-radius: 26px !important;
-  }
-
-  .shape-three {
-    grid-column: 1 / 3;
-  }
-
+  .hero-visual .img-shape,
+  .hero-visual .shape-three,
   .quality-badge {
-    position: relative !important;
-    left: auto !important;
-    bottom: auto !important;
-    width: 100% !important;
-    height: auto !important;
-    border-radius: 22px !important;
-    padding: 18px;
-    margin-top: 14px;
-    grid-column: 1 / 3;
-  }
-
-  .quality-badge p {
-    max-width: none;
-    font-size: 14px;
-  }
-
-  .about-layout {
-    display: block;
-  }
-
-  .about-left h1 {
-    font-size: 42px;
-  }
-
-  .about-intro {
-    font-size: 17px;
-    line-height: 1.7;
-  }
-
-  .stats {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-    padding: 40px 6%;
-    text-align: center;
-  }
-
-  .stats div {
-    border: none;
-    padding: 10px;
+    grid-column: 1 / -1;
   }
 }
