@@ -1843,3 +1843,65 @@ footer p {
     grid-column:1 / -1;
   }
 }
+
+/* ===== MOBILE ONLY FIXES ===== */
+@media (max-width: 768px) {
+
+  .about-preview {
+    grid-template-columns: 1fr !important;
+    gap: 25px !important;
+    padding: 70px 8% !important;
+    text-align: left !important;
+  }
+
+  .about-preview h2 {
+    font-size: 38px !important;
+    line-height: 1.15 !important;
+  }
+
+  .about-preview p {
+    font-size: 16px !important;
+    line-height: 1.7 !important;
+  }
+
+  .hero-visual {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero-visual .img-shape {
+    height: 260px !important;
+    width: 100% !important;
+  }
+
+  .quality-badge {
+    width: 100% !important;
+    height: auto !important;
+    padding: 22px !important;
+    border-radius: 26px !important;
+  }
+
+  .contact-form-box {
+    padding: 35px 24px !important;
+    border-radius: 28px !important;
+  }
+
+  .contact-form-box h2 {
+    font-size: 42px !important;
+    line-height: 1.15 !important;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .input-group input,
+  .input-group textarea {
+    font-size: 16px !important;
+    padding: 18px 18px 18px 55px !important;
+  }
+
+  .send-btn {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+}
